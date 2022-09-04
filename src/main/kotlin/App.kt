@@ -1,14 +1,14 @@
 class App {
     fun printHeader(){
         println("""
-            ===================
+            ====================
             Gunting Batu Kertas
-            ===================
+            ====================
         """.trimIndent())
     }
-
     fun run(){
         printHeader()
+        ProcessSuit().choice()
     }
     companion object{
         @JvmStatic
